@@ -4,13 +4,13 @@
   "description": "",
   "main": "postcss.config.js",
   "dependencies": {
-    "autoprefixer": "^9.8.6",
-    "nuxt": "^2.14.7",
-    "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
+    "nuxt": "^2.14.7"
   },
   "devDependencies": {
-    "postcss-cli": "^8.3.0"
+    "@nuxtjs/tailwindcss": "^3.2.0",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
   },
   "scripts": {
     "dev": "nuxt",
@@ -28,5 +28,5 @@
   "bugs": {
     "url": "https://github.com/densevoid/densevoid.github.io/issues"
   },
-  "homepage": "https://github.com/densevoid/densevoid.github.io#readme"
+  "homepage": "https://github.com/densevoid/densevoid.github.io"
 }

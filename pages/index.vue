@@ -1,3 +1,3 @@
 <template>
-    <p>azaza</p>
+    <p>Добро пожаловать!</p>
 </template>
