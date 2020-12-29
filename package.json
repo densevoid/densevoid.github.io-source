@@ -1,23 +1,18 @@
 {
   "name": "densevoid-hp",
-  "version": "0.0.1",
-  "description": "",
-  "main": "postcss.config.js",
-  "dependencies": {
-    "nuxt": "^2.14.7"
+  "version": "0.0.2",
+  "scripts": {
+    "start": "eleventy --input=src --output=_tmp --serve & postcss src/style/tailwind.css --o _tmp/style/main.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy --input=src --output=http && postcss src/style/tailwind.css --o http/style/main.css && cleancss http/style/main.css -o http/style/main.css"
   },
   "devDependencies": {
-    "@nuxtjs/tailwindcss": "^3.2.0",
-    "autoprefixer": "^9.8.6",
-    "postcss": "^7.0.35",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
-  },
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "generate": "nuxt generate",
-    "start": "nuxt start",
-    "compile": "postcss css/main.css -o ../css/style.css"
+    "@11ty/eleventy": "^0.11.1",
+    "autoprefixer": "^10.1.0",
+    "clean-css-cli": "^4.3.0",
+    "html-minifier": "^4.0.0",
+    "moment": "^2.29.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
   },
   "repository": {
     "type": "git",
@@ -28,5 +23,5 @@
   "bugs": {
     "url": "https://github.com/densevoid/densevoid.github.io/issues"
   },
-  "homepage": "https://github.com/densevoid/densevoid.github.io"
+  "homepage": "densevoid.github.io"
 }

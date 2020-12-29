@@ -1,0 +1,20 @@
+---
+layout: default.njk
+title: densevoid
+pagination:
+  data: collections.post
+  size: 10
+  reverse: true
+  alias: posts
+---
+
+<div>
+  <p>Добро пожаловать!</p>
+  <br />
+
+  {% for post in posts %}
+  <div>
+    <a href="{{ post.url | url }}">{{ post.data.title }} - {{ post.date | simpleDate }}</a> 
+  </div>
+  {% endfor %}
+</div>
